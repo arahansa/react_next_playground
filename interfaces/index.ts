@@ -8,3 +8,16 @@ export type User = {
   id: number
   name: string
 }
+
+interface CountState {
+  count : number,
+  sample: {
+    name: string,
+    value: boolean
+  }
+}
+
+export interface RootState {
+  count: CountState
+}
+
